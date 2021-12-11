@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Properties</title>
+    <style>
+        /* Variables are only block/local element and not global variable */
+        /* To create global variables you need to create a :root block element in style sheets */
+        :root{
+            --veryDark-color: black;
+            --danger-color: red;
+            --maxw: 800px;
+        }
+        .container{
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            --box-color: blue;
+            width: 200px;
+            height: 200px;
+            margin: 2px 9px;
+            border: 2px solid var(--veryDark-color);
+            background-color: var(--box-color);
+            box-shadow: 4px 4px 5px var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

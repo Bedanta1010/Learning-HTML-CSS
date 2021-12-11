@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design and Font Units</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        .container {
+            font-size: 10px;
+            /* width: 344px; */
+            height: 100vh;
+            /* 100vh is the full height of the viewport you are using */
+            width: 100vw;
+            /* Similarly there is vw */
+            border: 2px solid red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            font-size: 3em;
+            /* 10em is 10 times the font size of its parent */
+        }
+
+        #second {
+            font-size: 4rem;
+            /* 4rem is 4 times the font size of its base such as <html> tag  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first Heading</h1>
+        <h1 id="second">This is second Heading</h1>
+        <h1 id="third">This is third Heading</h1>
+    </div>
+</body>
+
+</html>

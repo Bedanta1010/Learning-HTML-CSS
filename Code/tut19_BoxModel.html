@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* * is universal codec in style attribute */
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: chartreuse;
+            border: 2px solid blue;
+            /* padding: 15px; */
+
+            /* padding-top: 61px;
+            padding-bottom: 45px;
+            padding-left: 23px;
+            padding-right: 85px; */
+
+            /* padding: 61px 85px 45px 23px; */
+
+            /* @param1: top
+            @param2: right
+            @param3: bottom
+            @param4: left */
+
+            padding: 15px 45px;  /* padding: y(top/bottom) x(left/right); */
+
+            margin: 24px;  /* It has same attributes as padding */
+
+            border-radius: 23px;
+            width: 451px;
+            /* box-sizing: border-box;  To stop width increasing when padding and margin is increased */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad atque, ducimus delectus, ea unde cupiditate aut rem quidem aliquam dicta quae reprehenderit magnam.</p>
+    </div>
+    <div class="container">
+        <h3>This is my Second Heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad atque, ducimus delectus, ea unde cupiditate aut rem quidem aliquam dicta quae reprehenderit magnam.</p>
+    </div>
+    <div class="container">
+        <h3>This is my Third Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad atque, ducimus delectus, ea unde cupiditate aut rem quidem aliquam dicta quae reprehenderit magnam.</p>
+    </div>
+</body>
+
+</html>
